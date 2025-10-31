@@ -3,7 +3,7 @@ pipeline{
   stages{
     stage('Checkout Code'){
       steps{
-        git 'https://github.com/bauerb2525/MSIS4363Assignment6_Integration'
+        git 'https://github.com/jzeleke/MSIS4363_Assignment6'
       }
     }
     stage('Build'){
