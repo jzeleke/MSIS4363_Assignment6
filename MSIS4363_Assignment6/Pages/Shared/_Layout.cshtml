@@ -1,52 +1,75 @@
-﻿<!DOCTYPE html>
+﻿@inherits Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>@ViewData["Title"] - MSIS4363_Assignment6</title>
-    <script type="importmap"></script>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
-    <link rel="stylesheet" href="~/MSIS4363_Assignment6.styles.css" asp-append-version="true"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@ViewData["Title"] - OKState Department</title>
+    <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
-<header>
-    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+    <header class="topbar">
+        <div class="topbar-inner container">
+            <a class="brand" href="/">OKState.edu</a>
+            <nav class="topnav">
+                <a href="/about">About</a>
+                <a href="/departments">Departments</a>
+                <a href="/workorder">Contact Us</a>
+                <a href="/careers">Careers</a>
+            </nav>
+            <div class="top-actions">
+                <a class="login" href="https://my.okstate.edu">Log in</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="site-nav">
         <div class="container">
-            <a class="navbar-brand" asp-area="" asp-page="/Index">MSIS4363_Assignment6</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                <ul class="navbar-nav flex-grow-1">
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
-                    </li>
+            <nav class="main-menu">
+                <a href="/about">About Ambiguous Department</a>
+                <a href="/org-charts">Organizational Charts</a>
+                <a href="/guide-to-services">Services</a>
+                <a href="/departments">Sub-Departments</a>
+            </nav>
+        </div>
+    </div>
+
+    @RenderBody()
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h4>Facilities Management</h4>
+                <ul>
+                    <li><a href="/">About Facilities Management</a></li>
+                    <li><a href="/departments">Departments</a></li>
+                    <li><a href="/service-request">Careers</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>Stillwater, OK 74078<br/>(XXX) XXX-XXXX</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Follow OSU</h4>
+                <ul class="socials">
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">YouTube</a></li>
                 </ul>
             </div>
         </div>
-    </nav>
-</header>
-<div class="container">
-    <main role="main" class="pb-3">
-        @RenderBody()
-    </main>
-</div>
 
-<footer class="border-top footer text-muted">
-    <div class="container">
-        &copy; 2025 - MSIS4363_Assignment6 - <a asp-area="" asp-page="/Privacy">Privacy</a>
-    </div>
-</footer>
-
-<script src="~/lib/jquery/dist/jquery.min.js"></script>
-<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-<script src="~/js/site.js" asp-append-version="true"></script>
-
-@await RenderSectionAsync("Scripts", required: false)
+        <div class="container copyright">
+            <p>© Oklahoma State University. All rights reserved.</p>
+            <p class="small-links">
+                <a href="#">Accessibility Services</a> |
+                <a href="#">Privacy Notice</a> |
+                <a href="#">Terms of Service</a>
+            </p>
+        </div>
+    </footer>
 </body>
 </html>
