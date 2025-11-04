@@ -1,18 +1,77 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+
+    ViewData["Title"] = "Home Page";
 }
+<main class="container">
+    <nav class="breadcrumbs banner">
+        <span>Ambiguous Department</span>
+    </nav>
+    
+    <section>
+    <header class="page-header">
+        <h1>Ambiguous Department</h1>
+        
+    </header>
+    <h2 class="subtitle">Campus Utilities</h2>
+    <p class="lead">Production, distribution, and management</p>
+    <section class="intro">
+        <p>
+            Here at the Ambiguous Department under Oklahoma State University we will never be entirely certain about
+            what we can and cannot tell you about what we do. It is important that we keep our inner-workings unknown
+            and our staff's identities hidden. Why you are still reading this when this is clearly just filler text? 
+            Good question, you tell me. So next time you wonder how important ambiguity is in the world we live in,
+            remember that we won't tell you. Welcome to the Ambiguous Department.
+        </p>
+        <p><a class="btn" href="#">More About Us</a></p>
+    </section>
+    
+    <section class="team-contact grid">
+        <article class="col">
+            <h3>Our Team</h3>
+            <img src="/images/placeholder-staff.jpg" alt="Energy Services Staff Image" class="staff-image" />
+            <p><a href="#">Staff Directory</a></p>
+            <p><a href="#">Energy Services Organizational Chart</a></p>
+        </article>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+        <aside class="col contact">
+            <h3>Contact Us</h3>
+            <address>
+                Ambiguous Department HQ<br />
+                Engineering South Bld. 0027<br />
+                124 N Hester Street<br />
+                Stillwater, OK, 74075
+            </address>
 
-<div>
-    First real commit and pull attempt....
-</div>
+            <p><strong>Office Hours Phones:</strong><br/>
+            XXX-XXX-XXXX<br/>
+            XXX-XXX-XXXX</p>
 
-<div> attempt to push code from staging to main</div>
+            <p><strong>After Hours Phone:</strong><br/>
+                XXX-XXX-XXXX</p>
 
-<div>Attempt to push - Braden Bauer</div>
+            <p><a class="btn" href="https://workorder.okstate.edu" target="_blank" rel="noopener">Submit a work request</a></p>
+        </aside>
+    </section>
+
+    <section class="orgs-resources">
+        <h3>Ambiguous Departments</h3>
+        <ul class="org-list">
+            <li><a href="#">Taxes Department</a></li>
+            <li><a href="#">R&R Department</a></li>
+            <li><a href="#">Human Resources</a></li>
+            <li><a href="#">Quantum Computing</a></li>
+            <li><a href="#">Quality Assurance</a></li>
+        </ul>
+
+        <h3>Resources</h3>
+        <ul class="resource-list">
+            <li><a href="#">Parking</a></li>
+            <li><a href="#">Interactive Campus Map</a></li>
+            <li><a href="#">Learn more About Us</a></li>
+            <li><a href="#">Event Calendar</a></li>
+        </ul>
+    </section>
+    </section>
+</main>
