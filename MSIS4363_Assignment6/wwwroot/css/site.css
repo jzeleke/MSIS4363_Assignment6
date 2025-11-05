@@ -68,10 +68,21 @@ body {
 .main-menu a { color: #dddddd; text-decoration: none; font-weight: 600; }
 
 
-.page-header { margin: 22px 0; }
-/*.page-header h1 { margin: 0; font-size: 2rem; color: #002855; }*/
-.subtitle { margin: 6px 0 0 0; color: var(--muted); font-size: 1rem; }
-.lead { color: #656565; max-width: 70ch; }
+.page-header { 
+    margin: 22px 0;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+.lead { color: #656565; 
+    max-width: 7
+}
 
 .banner {
     background-color: #000;
@@ -125,11 +136,23 @@ h1 {
 .staff-image { width: 100%; max-width: 500px; height: auto; margin: 12px 0; background: #ddd; }
 
 /* Lists */
-.org-list, .resource-list { list-style: none; padding: 0; margin: 0; display: flex; gap: 12px; flex-wrap: wrap; }
-.org-list li, .resource-list li { margin-right: 12px; }
+.org-list, .resource-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto; /* centers block element */
+    display: flex;
+    justify-content: center; /* centers pills horizontally */
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+
+.org-list li, .resource-list li { 
+    margin-right: 12px; 
+}
 
 /* Footer */
-.site-footer { background: #f4f6f8; color: #222; padding: 28px 0 12px; margin-top: 36px; border-top: 1px solid #e0e0e0; }
+.site-footer { color:#fe5c00; background: #000000; color: #dddddd; padding: 28px 0 12px; margin-top: 36px; border-top: 1px solid #e0e0e0; }
 .footer-grid { display: flex; gap: 20px; justify-content: space-between; }
 .footer-col { flex: 1; min-width: 160px; }
 .footer-col h4 { margin-top: 0; color: #dddddd; }
@@ -156,6 +179,29 @@ h1 {
 .header-text h2 {
     margin: 0; 
     line-height: 1.2;
+}
+
+.pill-container {
+    text-align: center;
+}
+
+.pill {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #353535;
+    font-size: 1em;
+    height: 1.375rem;
+    margin-right: .25em;
+    margin-left: .25em;
+    padding: 1.125em 1.25em;
+    border-radius: .625rem;
+    background-color: #dededb;
+}
+.pill:hover {
+    background-color: #fe5c00;
+    color: #000000;
 }
 
 .contact-box {
