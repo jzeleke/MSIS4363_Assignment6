@@ -132,8 +132,16 @@ h1 {
 }
 
 /* Grid for team/contact */
-.grid { display: grid; grid-template-columns: 2fr 1fr; align-items: start; margin-top: 18px; }
-.staff-image { width: 100%; max-width: 500px; height: auto; margin: 12px 0; background: #ddd; }
+.grid{
+    max-width: 1200px;           /* center like the official page */
+    margin: 0 auto;
+    padding: 0 20px 64px;
+    display: grid;
+    grid-template-columns: minmax(0,1.6fr) minmax(340px,1fr); /* big left, card right */
+    gap: 48px;
+    align-items: start;
+}
+.staff-image{ width:100%; height:auto; display:block; border:1px solid #ddd; }
 
 /* Lists */
 .org-list, .resource-list {
@@ -205,9 +213,15 @@ h1 {
 }
 
 .contact-box {
-    background-color: #353535; 
-    padding: 20px;
-    border: 1px solid #ccc;
-    color:#fff;
+    background-color: #323232;      /* OSU dark gray */
+    color: #fff;                    /* white text */
+    padding: 2.5rem 3rem;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 
+}
+
+.Text-Color-Grid{
+    color: #fe5c00;
 }
