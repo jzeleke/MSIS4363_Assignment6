@@ -12,11 +12,15 @@ section {
 
 * { box-sizing: border-box; }
 body {
-    font-family: "Segoe UI", Roboto, Arial, sans-serif;
     margin: 0;
     color: #222;
     line-height: 1.5;
     background: #fff;
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+   
+
 }
 
 /*Not Being Used*/
@@ -28,23 +32,25 @@ body {
 
 /* Topbar and navigation */
 .topbar {
-    background: #002855;
-    color: #dddddd;
+    background: #fff;
+    color: #Fe5c00;
 }
 .topbar-inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px 0;
+    margin-left: 22em;
 }
 .brand {
-    color: #fff;
+    color: #Fe5c00;
     text-decoration: none;
-    font-weight: 700;
+    font-weight: 500;
     letter-spacing: 0.5px;
+    font-size: x-large;
 }
 .topnav a {
-    color: #fff;
+    color: #Fe5c00;
     text-decoration: none;
     margin-left: 18px;
     font-size: 0.95rem;
@@ -70,10 +76,9 @@ body {
     background-color: #000;
     color: #fff;
     padding: 20px 20px;
-    text-align: ;
     border-radius: 4px;
     margin-bottom: 30px;
-    border-bottom: 5px solid #fe5c00;
+    border-top: 5px solid #fe5c00;
 }
 .banner span {
     color: #fff;
@@ -116,8 +121,8 @@ h1 {
 }
 
 /* Grid for team/contact */
-.grid { display: grid; grid-template-columns: 2fr 1fr; gap: 24px; align-items: start; margin-top: 18px; }
-.staff-image { width: 100%; max-width: 420px; height: auto; margin: 12px 0; border-radius: 6px; background: #ddd; }
+.grid { display: grid; grid-template-columns: 2fr 1fr; align-items: start; margin-top: 18px; }
+.staff-image { width: 100%; max-width: 500px; height: auto; margin: 12px 0; background: #ddd; }
 
 /* Lists */
 .org-list, .resource-list { list-style: none; padding: 0; margin: 0; display: flex; gap: 12px; flex-wrap: wrap; }
@@ -131,4 +136,29 @@ h1 {
 .socials { list-style: none; padding: 0; margin: 0; }
 .small-links { color: var(--muted); font-size: 0.9rem; }
 
-.breadcrumbs { font-size: 0.9rem; color: var(--muted); margin-bottom: 8px; }
+.breadcrumbs { font-size: 0.9rem; color: var(--muted); margin-top: 8px; }
+
+.LogoImage{
+    width: 200px; 
+    height: auto;
+}
+.OSU-header{
+    display: flex;
+    align-items: center; 
+    gap: 20px; 
+    margin: 20px;
+    padding-left: 20em;
+}
+.header-text h1,
+.header-text h2 {
+    margin: 0; 
+    line-height: 1.2;
+}
+
+.contact-box {
+    background-color: #353535; 
+    padding: 20px;
+    border: 1px solid #ccc;
+    color:#fff;
+
+}
