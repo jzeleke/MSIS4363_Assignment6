@@ -88,8 +88,7 @@ h3 {
     background-color: #000;
     color: #fff;
     padding: 20px 20px;
-    border-radius: 4px;
-    margin-bottom: 30px;
+    margin-bottom: 0;
     border-top: 5px solid #fe5c00;
 }
 .banner span {
@@ -167,7 +166,7 @@ h1 {
 .socials { list-style: none; padding: 0; margin: 0; text-decoration: none;}
 .small-links { color: var(--muted); font-size: 0.9rem; text-decoration: none;}
 
-.breadcrumbs { font-size: 0.9rem; color: var(--muted); margin-top: 8px; }
+.breadcrumbs { font-size: 0.9rem; color: var(--muted); margin-top: 0; }
 
 .LogoImage{
     width: 200px; 
@@ -224,4 +223,12 @@ h1 {
 
 .Text-Color-Grid{
     color: #fe5c00;
+}
+
+.image-OSU-Campus{
+    display: block;
+    width: 100%;
+    height: 800px;
+    margin: 0;
+    padding: 0;
 }
