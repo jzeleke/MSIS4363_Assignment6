@@ -160,12 +160,12 @@ h1 {
 }
 
 /* Footer */
-.site-footer { color:#fe5c00; background: #000000; color: #dddddd; padding: 28px 0 12px; margin-top: 36px; border-top: 1px solid #e0e0e0; }
-.footer-grid { display: flex; gap: 20px; justify-content: space-between; }
-.footer-col { flex: 1; min-width: 160px; }
-.footer-col h4 { margin-top: 0; color: #dddddd; }
-.socials { list-style: none; padding: 0; margin: 0; }
-.small-links { color: var(--muted); font-size: 0.9rem; }
+.site-footer { color:#fe5c00; background: #000000; color: #ffffff; padding: 28px 0 12px; margin-top: 36px; border-top: 1px solid #e0e0e0;text-decoration: none; }
+.footer-grid { display: flex; gap: 20px; justify-content: space-between; text-decoration: none;}
+.footer-col { flex: 1; min-width: 160px;text-decoration: none; }
+.footer-col h4 { margin-top: 0; color: #dddddd;text-decoration: none; }
+.socials { list-style: none; padding: 0; margin: 0; text-decoration: none;}
+.small-links { color: var(--muted); font-size: 0.9rem; text-decoration: none;}
 
 .breadcrumbs { font-size: 0.9rem; color: var(--muted); margin-top: 8px; }
 
